@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "ES2022", // Cambia a ES2022
+    "useDefineForClassFields": false,
     "module": "esnext",
     "moduleResolution": "node",
     "experimentalDecorators": true,
