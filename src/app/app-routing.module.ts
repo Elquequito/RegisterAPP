@@ -42,6 +42,18 @@ const routes: Routes = [
   {
     path: 'forgot-password',
     loadChildren: () => import('./users/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./users/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'sign-in',
+    loadChildren: () => import('./users/sign-in/sign-in.module').then( m => m.SignInPageModule)
+  },
+  {
+    path: 'sign-up',
+    loadChildren: () => import('./users/sign-up/sign-up.module').then( m => m.SignUpPageModule)
   }
 ];
 

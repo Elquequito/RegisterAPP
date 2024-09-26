@@ -5,24 +5,18 @@
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "lib": ["es2018", "dom"],
-    "skipLibCheck": true,
-    "strict": true,
-    "noImplicitAny": false,
-    "suppressImplicitAnyIndexErrors": true,
+    "lib": [
+      "es2018",
+      "dom"
+    ],
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     }
   },
   "angularCompilerOptions": {
     "enableIvy": true
-  },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  }
 }

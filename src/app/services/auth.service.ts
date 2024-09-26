@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Observable } from 'rxjs';
-
 
 @Injectable({
   providedIn: 'root'
@@ -44,7 +43,11 @@ export class AuthService {
 
   // Método para cerrar sesión
   async signOut() {
-    await this.afAuth.signOut();
+    try {
+      await this.afAuth.signOut(); // Cierra la sesión del usuario
+    } catch (error) {
+      console.error("Error al cerrar sesión:", error); // Maneja el error de cerrar sesión
+    }
   }
 
   // Método para restablecer la contraseña

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="subtitulo ion-text-wrap">
+      Perfil
+    </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="openMenu()">
+        <ion-icon color="primary" slot="icon-only" name="menu-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Verifica si el UID está disponible -->
+  <div *ngIf="!uid || !uid.length">
+    <h3 class="subtitulo encabezado">Información</h3>
+    <ion-item>
+      <ion-label class="normal" position="floating">
+        Email: {{ user?.email }}
+      </ion-label>
+    </ion-item>
+  </div> 
+
+  <div *ngIf="uid && uid.length">
+    <h3 class="subtitulo encabezado">Información</h3>
+    <ion-item>
+      <ion-label class="normal">
+        Email: {{ user?.email }}
+      </ion-label>
+    </ion-item>
+    
+    <div style="text-align: end; margin: 10px">
+      <ion-button (click)="salir()" class="normal" color="dark">Salir</ion-button>
+    </div>
+  </div>
+</ion-content>
