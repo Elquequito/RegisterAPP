@@ -47,14 +47,13 @@ export class AuthService {
     await this.afAuth.signOut();
   }
 
-  // En auth.service.ts
-async resetPassword(email: string) {
-  try {
-    await this.afAuth.sendPasswordResetEmail(email); // Envía el correo de restablecimiento de contraseña
-    return Promise.resolve(); // Resuelve la promesa
-  } catch (error) {
-    return Promise.reject(error); // Rechaza la promesa si hay un error
+  // Método para restablecer la contraseña
+  async resetPassword(email: string) {
+    try {
+      await this.afAuth.sendPasswordResetEmail(email); // Envía el correo de restablecimiento de contraseña
+      return Promise.resolve(); // Resuelve la promesa
+    } catch (error) {
+      return Promise.reject(error); // Rechaza la promesa si hay un error
+    }
   }
-}
-
 }

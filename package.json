@@ -14,10 +14,10 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.0.0",
-    "@angular/common": "^18.0.0",
+    "@angular/common": "^16.2.12",
     "@angular/compiler": "^18.0.0",
-    "@angular/core": "^15.0.0",
-    "@angular/fire": "^18.0.1",
+    "@angular/core": "^16.2.12",
+    "@angular/fire": "^7.0.0",
     "@angular/forms": "^18.0.0",
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
