@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Escanear Código QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Botón para iniciar el escaneo -->
+  <ion-button expand="full" (click)="startScan()">Escanear Código QR</ion-button>
+
+  <!-- Mostrar el código escaneado si existe -->
+  <ion-item *ngIf="scannedCode">
+    <ion-label>Código escaneado: {{ scannedCode }}</ion-label>
+  </ion-item>
+</ion-content>
