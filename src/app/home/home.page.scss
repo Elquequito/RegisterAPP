@@ -1,6 +1,23 @@
+/* Estilos para la barra de herramientas de Duoc UC */
+.toolbar-duoc {
+  background-color: #005BAC !important; /* Color azul Duoc UC */
+}
+
+.toolbar-duoc ion-title {
+  color: #fbb41c ; /* Letras amarillas */
+}
+
+.toolbar-duoc ion-button ion-icon {
+  color:  #fbb41c ; /* Íconos amarillos */
+}
+
+.toolbar-duoc ion-button {
+  color:  #fbb41c ; /* Botones con texto amarillo */
+}
+
+/* Contenedor centrado en la página */
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -16,12 +33,11 @@
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
   margin: 0;
 }
 
 #container a {
   text-decoration: none;
 }
+

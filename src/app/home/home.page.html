@@ -1,20 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header [translucent]="false"> <!-- Cambia a false para evitar la translucidez -->
+  <ion-toolbar class="toolbar-duoc"> <!-- Clase para aplicar estilo CSS -->
     <ion-title>
-      Blank
+      Register APP
     </ion-title>
+    <ion-buttons slot="end"> <!-- Botones a la derecha -->
+      <ion-button routerLink="/sign-in">
+        <ion-icon slot="icon-only" name="log-in-outline"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/sign-up">
+        <ion-icon slot="icon-only" name="person-add-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
 
-  <div id="container">
-    <strong>Puta Madre Abuela</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <!-- Logo Duoc UC grande con texto debajo -->
+  <div style="text-align: center; margin-top: 50px;">
+    <img src="assets/logo-duoc.png" alt="Logo Duoc UC" style="width: 200px; margin-bottom: 20px;">
+    <p style="font-size: 1.5rem;">Scanner QR de Asistencia</p>
   </div>
 </ion-content>
