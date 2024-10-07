@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true" class="ion-padding" keyboard-resize="true">
   <form (ngSubmit)="onRegister(email.value, password.value)">
     <ion-item lines="full">
       <ion-label position="floating">Email</ion-label>
@@ -20,6 +20,7 @@
       </ion-col>
     </ion-row>
   </form>
+
   <ion-row>
     <ion-col>
       <p>
@@ -27,4 +28,12 @@
       </p>
     </ion-col>
   </ion-row>
+  
+  <!-- Contenedor para el botón de Volver -->
+  <div class="volver-container">
+    <ion-button routerLink="/home" fill="clear"> <!-- Cambia "/previous-page" por la ruta correcta -->
+      <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      Volver
+    </ion-button>
+  </div>
 </ion-content>

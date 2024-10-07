@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true" class="ion-padding" keyboard-resize="true">
   <form (submit)="onLogin(email.value, password.value); $event.preventDefault();">
     <ion-item lines="full">
       <ion-label position="floating">Email</ion-label>
@@ -26,8 +26,9 @@
         </p>
       </ion-col>
     </ion-row>
-    <span class="center-span"> o </span>
+    <span class="center-span">o</span>
   </form>
+  
   <ion-row>
     <ion-col>
       <p class="ion-text-end">
@@ -35,4 +36,12 @@
       </p>
     </ion-col>
   </ion-row>
+  
+  <!-- Contenedor para el botón de Volver -->
+  <div class="volver-container">
+    <ion-button routerLink="/home" fill="clear"> <!-- Cambia "/previous-page" por la ruta correcta -->
+      <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      Volver
+    </ion-button>
+  </div>
 </ion-content>
