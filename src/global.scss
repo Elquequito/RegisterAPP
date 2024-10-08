@@ -33,3 +33,33 @@
 /* Comentar o eliminar la línea que causa problemas */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 /* @import '@ionic/angular/css/palettes/dark.system.css'; */ // Asegúrate de que esta línea también sea válida.
+
+ion-content {
+    --background: #163349; /* Fondo oscuro */
+    color: #fbb41c; /* Color de texto */
+  }
+  
+  ion-button {
+    --background: #fbb41c; /* Botón amarillo */
+    color: #163349; /* Texto oscuro en botón */
+  }
+  
+  ion-item {
+    color: #fbb41c; /* Texto en ítems */
+    border-radius: 8px;
+  }
+  
+  ion-label {
+    font-weight: bold;
+  }
+  
+  p {
+    color: #fbb41c;
+  }
+  
+  .scanner-active {
+    ion-content {
+      opacity: 0;
+    }
+  }
+  

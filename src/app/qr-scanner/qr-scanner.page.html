@@ -5,11 +5,40 @@
 </ion-header>
 
 <ion-content class="ion-padding">
+  <!-- Mensaje de inicio del escaneo -->
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <p>Apunta la cámara hacia el código QR para escanear y registrar tu asistencia.</p>
+    </ion-col>
+  </ion-row>
+
   <!-- Botón para iniciar el escaneo -->
-  <ion-button expand="full" (click)="startScan()">Escanear Código QR</ion-button>
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" (click)="startScan()">Iniciar Escaneo</ion-button>
+    </ion-col>
+  </ion-row>
 
   <!-- Mostrar el código escaneado si existe -->
-  <ion-item *ngIf="scannedCode">
-    <ion-label>Código escaneado: {{ scannedCode }}</ion-label>
-  </ion-item>
+  <ion-row *ngIf="scannedCode">
+    <ion-col>
+      <ion-item color="success">
+        <ion-label>Código escaneado: {{ scannedCode }}</ion-label>
+      </ion-item>
+      <!-- Mensaje de confirmación de asistencia -->
+      <ion-item color="success">
+        <ion-label>Asistencia registrada correctamente</ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <!-- Botón de retroceso para volver a la página principal -->
+  <ion-row class="ion-justify-content-end" style="margin-top: auto;">
+    <ion-col>
+      <ion-button routerLink="/home" fill="clear">
+        <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+        Volver
+      </ion-button>
+    </ion-col>
+  </ion-row>
 </ion-content>
