@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2022", // Cambia a ES2022
+    "target": "ES2022",
     "useDefineForClassFields": false,
     "module": "esnext",
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "lib": [
-      "es2018",
+      "es2022",
       "dom"
     ],
     "baseUrl": "./",

@@ -12,30 +12,30 @@
     "lint": "ng lint"
   },
   "private": true,
-"dependencies": {
+  "dependencies": {
     "@angular/animations": "^16.2.12",
     "@angular/common": "^16.2.12",
     "@angular/compiler": "^16.2.12",
     "@angular/core": "^16.2.12",
-    "@angular/fire": "^7.2.0", 
+    "@angular/fire": "^7.2.0",
     "@angular/forms": "^16.2.12",
     "@angular/platform-browser": "^16.2.12",
     "@angular/platform-browser-dynamic": "^16.2.12",
     "@angular/router": "^16.2.12",
     "@capacitor-community/barcode-scanner": "^4.0.1",
     "@capacitor/app": "^6.0.1",
-    "@capacitor/core": "^5.7.8",
+    "@capacitor/core": "^6.1.2",
     "@capacitor/haptics": "^6.0.1",
     "@capacitor/keyboard": "^6.0.2",
     "@capacitor/status-bar": "^6.0.1",
-    "@ionic/angular": "^6.7.0", 
+    "@ionic/angular": "^6.7.0",
+    "firebase": "^9.0.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.13.0",
-    "firebase": "^9.0.0"
-},
-"devDependencies": {
+    "zone.js": "~0.13.0"
+  },
+  "devDependencies": {
     "@angular-devkit/build-angular": "16.2.16",
     "@angular-eslint/builder": "^16.2.0",
     "@angular-eslint/eslint-plugin": "^16.2.0",
@@ -61,13 +61,11 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.4.0"
-},
+    "typescript": "4.9.4"
+  },
   "description": "An Ionic project",
-
-  "engines" : {
-  "node": ">=18.0.0 <23",
-  "npm": ">=10.8.0"
-}
-
+  "engines": {
+    "node": ">=18.0.0 <23",
+    "npm": ">=10.8.0"
+  }
 }
